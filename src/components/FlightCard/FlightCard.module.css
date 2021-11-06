@@ -1,0 +1,9 @@
+.flightCard {
+    width: 600px;
+    height: 30px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
