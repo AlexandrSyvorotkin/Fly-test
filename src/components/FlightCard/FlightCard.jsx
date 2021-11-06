@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from "./FlightCard.module.css";
 
 
 const FlightCard = ({
@@ -16,7 +15,7 @@ const FlightCard = ({
                         AirlineCompany,
 }) => {
     return (
-        <div className={classes.flightCard}>
+        <div className='flex justify-between'>
             <div>{departureCity}</div>
             <div>{arrivalCity}</div>
         </div>

@@ -1,7 +1,7 @@
 import './App.module.css';
 import {useEffect, useState} from "react";
 import axios from "axios";
-import classes from './App.module.css'
+import './index.css'
 import RightBlock from "./components/RightBlock/RightBlock";
 import ListOfFlights from "./components/ListOfFlights/ListOfFlights";
 
@@ -23,7 +23,7 @@ function App() {
     }, [])
 
   return (
-    <div className={classes.app}>
+    <div>
       {/*<RightBlock/>*/}
         {isLoaded && <ListOfFlights amountsOfFlights={amountOfFlights}/>}
     </div>
