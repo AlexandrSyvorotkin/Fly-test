@@ -21,8 +21,7 @@ const ListOfFlights = ({amountsOfFlights}) => {
     // console.log(arrivalCities)
     // console.log(data[0].flightToken)
     return (
-        <div className='mt-3'>
-
+        <div>
             {carriers.map((it, i) => {
                 const { departureCity,
                         arrivalCity,
