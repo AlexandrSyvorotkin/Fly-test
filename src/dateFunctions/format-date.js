@@ -1,4 +1,4 @@
-export default {
+const fmDate = {
     month: function(n) {
         switch (n) {
             case 0: return "янв.";
@@ -29,9 +29,25 @@ export default {
     }
 }
 
+
+export const formatDate = function (str) {
+    const date = new Date(str);
+    let h = date.getHours().toString();
+    h = h.length == 1 ? "0" + h : h;
+    let m = date.getMinutes().toString();
+    m = m.length == 1 ? "0" + m : m;
+    const timeStr = `${h}:${m}`;
+    const day = date.getDate();
+    const month = fmDate.month(date.getMonth());
+    const dayOfWeek = fmDate.day(date.getDay());
+    const dateStr = `${day} ${month} ${dayOfWeek}`;
+
+    return ({date: dateStr, time: timeStr});
+
+}
+
 export const minutesToString = function (number) {
     const hours = Math.floor(number / 60);
     const minutes = number % 60;
     return `${hours} ч. ${minutes} мин.`;
 }
-
