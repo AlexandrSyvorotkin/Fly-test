@@ -31,14 +31,20 @@ const FlightSegment = ({
             </div>
             <hr className='mt-2'/>
             <div className='flex justify-between mt-3'>
-                <div>{departure.date + " " + departure.time}</div>
+                <div className='flex items-center'>
+                    <div className='text-xl'>{departure.time}</div>
+                    <span className='text-blue-500 ml-2'>{departure.date}</span>
+                </div>
                 <div className='flex items-center'>
                     <div className='mr-2'>
                         <AiOutlineClockCircle size='1.5rem'/>
                     </div>
                     {minutesToString(travelDuration)}
                 </div>
-                <div>{arrival.date + " " + arrival.time}</div>
+                <div className='flex items-center'>
+                    <div className='text-blue-500 mr-2'>{arrival.date}</div>
+                    <span className='text-xl'>{arrival.time}</span>
+                </div>
             </div>
             <hr className='mt-2'/>
             <div className='text-xl mt-2 mb-2'>Рейс выполняет: {airlineCompany}</div>
