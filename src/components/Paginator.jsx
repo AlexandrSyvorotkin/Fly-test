@@ -14,7 +14,7 @@ const Paginator = ({ flightsPerPage, totalFlights, paginate }) => {
             <ul>
                 {
                     pageNumbers.map(number => (
-                        <li key={number} className='inline mt-2 ml-2 border-2 border-blue-500 p-1'>
+                        <li key={number} className='inline mt-2 ml-2 border-2 border-blue-500 p-1 active:bg-red-500'>
                             <a href='!#' onClick={() => paginate(number)}>{number}</a>
                         </li>
                     ))
