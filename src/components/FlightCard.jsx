@@ -34,7 +34,7 @@ const FlightCard = ({
                 arrivalAirPort={arrivalAirPort}
                 arrivalAirportUid={arrivalAirportUid}
                 travelDuration={travelDuration}
-                airlineCompan={airlineCompany}
+                airlineCompany={airlineCompany}
                 arrivalDate={arrivalDate}
                 departureDate={departureDate}
             />

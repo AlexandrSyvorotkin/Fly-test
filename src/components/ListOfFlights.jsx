@@ -12,7 +12,6 @@ const ListOfFlights = ({amountsOfFlights}) => {
     return (
         <div>
             {firstSegmentFlights.map((it, i) => {
-
                 const {
                     departureCity,
                     arrivalCity,
