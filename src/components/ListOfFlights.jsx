@@ -3,11 +3,17 @@ import FlightCard from "./FlightCard";
 
 
 
-const ListOfFlights = ({amountsOfFlights}) => {
+const ListOfFlights = ({amountsOfFlights, isLoaded}) => {
+    // console.log(amountsOfFlights)
+
+    // if (isLoaded) {
+    //    return <h2>keka</h2>
+    // }
 
     const data = amountsOfFlights.flights
+    // console.log(data)
     const SegmentFlights = data.map(it => it.flight)
-    console.log(SegmentFlights)
+    // console.log(SegmentFlights)
 
     return (
         <div>
@@ -25,7 +31,7 @@ const ListOfFlights = ({amountsOfFlights}) => {
                 const {segments} = it.legs[0]
                 const segmentsInfo = segments.map(it => it)
                 const numberOfSegmentsInfo = Object.keys(segmentsInfo)
-                console.log(numberOfSegmentsInfo)
+                // console.log(numberOfSegmentsInfo)
                 return (
 
                         <FlightCard
