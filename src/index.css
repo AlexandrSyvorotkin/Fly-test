@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .activePagination {
+        @apply inline mt-2 ml-2 border-2 border-blue-500 p-1 bg-black
+    }
+}
+
+.notActivePagination {
+    @apply inline mt-2 ml-2 border-2 border-blue-500 p-1
+}

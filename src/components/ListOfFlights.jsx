@@ -3,21 +3,22 @@ import FlightCard from "./FlightCard";
 
 
 
-const ListOfFlights = ({amountsOfFlights, isLoaded}) => {
+const ListOfFlights = ({amountOfFlights, isLoaded}) => {
     // console.log(amountsOfFlights)
 
     // if (isLoaded) {
     //    return <h2>keka</h2>
     // }
 
-    const data = amountsOfFlights.flights
-    // console.log(data)
-    const SegmentFlights = data.map(it => it.flight)
+    // const data = amountOfFlights.flights
+    // const segmentFlights = data.map(it => it.flight)
+
+    const segmentFlights = amountOfFlights.map(it => it.flight)
     // console.log(SegmentFlights)
 
     return (
         <div>
-            {SegmentFlights.map((it, i) => {
+            {segmentFlights.map((it, i) => {
                 // const {
                 //     departureCity,
                 //     arrivalCity,

@@ -75,8 +75,8 @@ const FlightSegment = ({
             {/*}*/}
 
             <div className='text-xl mt-2 mb-2'>Рейс выполняет: {airlineCompany}</div>
-            <button onClick={() => setSransfer(true)}>Transfer</button>
-            <button onClick={() => setSransfer(false)}>TransferFalse</button>
+            {/*<button onClick={() => setSransfer(true)}>Transfer</button>*/}
+            {/*<button onClick={() => setSransfer(false)}>TransferFalse</button>*/}
         </>
     );
 };
