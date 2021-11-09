@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from "../UI/Button";
-import {AiOutlineClockCircle, BsArrowRight} from "react-icons/all";
-import {formatDate, minutesToString} from "../dateFunctions/format-date";
 import FlightSegment from "./FlightSegment";
 
 const FlightCard = ({
@@ -13,7 +11,6 @@ const FlightCard = ({
                         arrivalDate,
                         arrivalAirPort,
                         travelDuration,
-                        isTransferOrNot,
                         airlineCompany,
                         departureAirportUid,
                         arrivalAirportUid

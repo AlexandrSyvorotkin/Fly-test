@@ -27,7 +27,7 @@ function App() {
                 {/*<div className='w-16 h-16 pl-2 pr-2'>*/}
                 {/*    <img className='bg-cover' src={FlightLogo} alt="flightLogo"/>*/}
                 {/*</div>*/}
-                <h1 className='text-4xl text-center p-2 italic text-indigo-500'>FlightsService.ru</h1>
+                {/*<h1 className='text-4xl text-center p-2 italic text-indigo-500'>FlightsService.ru</h1>*/}
             </div>
             <div className='flex justify-center'>
                 <RightBlock/>

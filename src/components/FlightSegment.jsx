@@ -22,11 +22,11 @@ const FlightSegment = ({
         <>
             <div className='flex justify-start mt-3 items-center text-xl'>
                 <div>{departureCity} , {departureAirport}
-                    <span className='text-blue-700'>({departureAirportUid})</span>
+                    <span className='text-blue-700 ml-2'>({departureAirportUid})</span>
                 </div>
                 <BsArrowRight size='1.5rem' color='blue' className='mr-4 ml-4'/>
                 <div>{arrivalCity} , {arrivalAirPort}
-                    <span className='text-blue-700'>({arrivalAirportUid})</span>
+                    <span className='text-blue-700 ml-2'>({arrivalAirportUid})</span>
                 </div>
             </div>
             <hr className='mt-2'/>
@@ -38,7 +38,6 @@ const FlightSegment = ({
                     </div>
                     {minutesToString(travelDuration)}
                 </div>
-                {arrival.date + " " + arrival.time}
                 <div>{arrival.date + " " + arrival.time}</div>
             </div>
             <hr className='mt-2'/>
