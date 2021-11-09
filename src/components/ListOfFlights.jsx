@@ -6,12 +6,12 @@ import FlightCard from "./FlightCard";
 const ListOfFlights = ({amountsOfFlights}) => {
 
     const data = amountsOfFlights.flights
-    const firstSegmentFlights = data.map(it => it.flight)
-    console.log(firstSegmentFlights)
+    const SegmentFlights = data.map(it => it.flight)
+    console.log(SegmentFlights)
 
     return (
         <div>
-            {firstSegmentFlights.map((it, i) => {
+            {SegmentFlights.map((it, i) => {
                 // const {
                 //     departureCity,
                 //     arrivalCity,
@@ -22,6 +22,10 @@ const ListOfFlights = ({amountsOfFlights}) => {
                 //     travelDuration,
                 //     airline
                 // } = it.legs[0].segments[0];
+                const {segments} = it.legs[0]
+                const segmentsInfo = segments.map(it => it)
+                const numberOfSegmentsInfo = Object.keys(segmentsInfo)
+                console.log(numberOfSegmentsInfo)
                 return (
 
                         <FlightCard
@@ -48,6 +52,8 @@ const ListOfFlights = ({amountsOfFlights}) => {
                         secondSegmentAirlineCompany={it?.carrier?.caption}
                         secondSegmentDepartureAirportUid={it?.legs[0]?.segments[1]?.departureAirport.uid}
                         secondSegmentArrivalAirportUid={it?.legs[0]?.segments[1]?.arrivalAirport.uid}
+
+                        segments={numberOfSegmentsInfo}
                     />
                 )
             })}

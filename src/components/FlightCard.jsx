@@ -24,10 +24,11 @@ const FlightCard = ({
                         secondSegmentTravelDuration,
                         secondSegmentAirlineCompany,
                         secondSegmentDepartureAirportUid,
-                        secondSegmentArrivalAirportUid
+                        secondSegmentArrivalAirportUid,
+                        segmentsInfo
                 }) =>
 {
-
+    // console.log(segmentsInfo)
     return (
         <div>
             <div className='bg-blue-500 text-white'>
@@ -49,6 +50,7 @@ const FlightCard = ({
                 airlineCompany={firstSegmentAirlineCompany}
                 arrivalDate={firstSegmentArrivalDate}
                 departureDate={firstSegmentDepartureDate}
+                segments={segmentsInfo}
             />
 
             <div className='bg-blue-300 w-full h-1 mb-2'></div>
@@ -64,6 +66,7 @@ const FlightCard = ({
                 airlineCompany={secondSegmentAirlineCompany}
                 arrivalDate={secondSegmentArrivalDate}
                 departureDate={secondSegmentDepartureDate}/>
+                segments={segmentsInfo}
 
 
             <Button>ВЫБРАТЬ</Button>
