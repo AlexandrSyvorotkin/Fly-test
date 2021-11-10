@@ -13,7 +13,6 @@ const FlightSegment = ({
                            airlineCompany,
                            arrivalDate,
                            departureDate,
-                           segmentsInfo
                        }) => {
 
     const arrival = formatDate(arrivalDate);
@@ -62,21 +61,10 @@ const FlightSegment = ({
                 <hr className='mt-2'/>
             }
 
-            {/*{segments.length < 2 ?*/}
-            {/*    <>*/}
-            {/*        <div className='flex justify-center mt-2 items-center'>*/}
-            {/*            <span className='w-96 h-0.5 bg-gray-300'></span>*/}
-            {/*                <span className='text-yellow-500 text-xl mr-4 ml-4'>1 пересадка</span>*/}
-            {/*            <span className='w-96 h-0.5 bg-gray-300'></span>*/}
-            {/*        </div>*/}
-            {/*    </>*/}
-            {/*    :*/}
-            {/*    <hr className='mt-2'/>*/}
-            {/*}*/}
+
 
             <div className='text-xl mt-2 mb-2'>Рейс выполняет: {airlineCompany}</div>
-            {/*<button onClick={() => setSransfer(true)}>Transfer</button>*/}
-            {/*<button onClick={() => setSransfer(false)}>TransferFalse</button>*/}
+
         </>
     );
 };

@@ -7,8 +7,6 @@ const Paginator = ({ flightsPerPage, totalFlights, paginate }) => {
         pageNumbers.push(i)
     }
 
-    // console.log(Math.ceil(total / flightsPerPage))
-
     return (
         <div>
             <ul>

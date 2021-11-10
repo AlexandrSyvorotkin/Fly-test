@@ -4,35 +4,16 @@ import FlightCard from "./FlightCard";
 
 
 const ListOfFlights = ({amountOfFlights, isLoaded}) => {
-    // console.log(amountsOfFlights)
-
-    // if (isLoaded) {
-    //    return <h2>keka</h2>
-    // }
-
-    // const data = amountOfFlights.flights
-    // const segmentFlights = data.map(it => it.flight)
 
     const segmentFlights = amountOfFlights.map(it => it.flight)
-    // console.log(SegmentFlights)
 
     return (
         <div>
             {segmentFlights.map((it, i) => {
-                // const {
-                //     departureCity,
-                //     arrivalCity,
-                //     departureDate,
-                //     arrivalDate,
-                //     arrivalAirport,
-                //     departureAirport,
-                //     travelDuration,
-                //     airline
-                // } = it.legs[0].segments[0];
+
                 const {segments} = it.legs[0]
                 const segmentsInfo = segments.map(it => it)
                 const numberOfSegmentsInfo = Object.keys(segmentsInfo)
-                // console.log(numberOfSegmentsInfo)
                 return (
 
                         <FlightCard
@@ -59,12 +40,10 @@ const ListOfFlights = ({amountOfFlights, isLoaded}) => {
                         secondSegmentAirlineCompany={it?.carrier?.caption}
                         secondSegmentDepartureAirportUid={it?.legs[0]?.segments[1]?.departureAirport.uid}
                         secondSegmentArrivalAirportUid={it?.legs[0]?.segments[1]?.arrivalAirport.uid}
-
                         segments={numberOfSegmentsInfo}
                     />
                 )
             })}
-
         </div>
     );
 };
