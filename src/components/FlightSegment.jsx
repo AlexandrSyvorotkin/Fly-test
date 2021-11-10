@@ -17,8 +17,7 @@ const FlightSegment = ({
 
     const arrival = formatDate(arrivalDate);
     const departure = formatDate(departureDate);
-    // console.log(segmentsInfo)
-    const [transfer, setSransfer] = useState(false)
+    const [transfer, setStransfer] = useState(false)
     return (
         <>
             <div className='flex justify-start mt-3 items-center text-xl'>
