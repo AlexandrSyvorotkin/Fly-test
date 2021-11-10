@@ -1,19 +1,6 @@
 import React from 'react';
 
-const RightBlock = ({amountOfFlights}) => {
-
-    console.log(amountOfFlights)
-
-    // const prices = amountOfFlights.map(price => price.flight.price.total.amount)
-    // console.log(typeof(prices))
-    //
-    // const sortByIncreasePrice = prices.sort((a,b) => a - b)
-    // console.log(sortByIncreasePrice, 'сортировка по возрастанию')
-    //
-    // const sortByDecreasePrice = prices.sort((a,b)=> b - a)
-    // console.log(sortByDecreasePrice, 'сортировка по убыванию')
-
-
+const RightBlock = () => {
 
     return (
         <div className='w-80'>
